@@ -1,8 +1,8 @@
-from mycroft import MycroftSkill, intent_file_handler, intent_handler
 from adapt.intent import IntentBuilder
+from mycroft import MycroftSkill, intent_file_handler, intent_handler
 
 
-class CricketScores(MycroftSkill):
+class CricketScoresSkill(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
 
@@ -12,5 +12,5 @@ class CricketScores(MycroftSkill):
 
 
 def create_skill():
-    return CricketScores()
+    return CricketScoresSkill()
 
